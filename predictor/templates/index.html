@@ -1,8 +1,30 @@
-<h1>Prediction</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      h1 {
+        color: red;
+      }
+      @font-face {
+        font-family: "Preeti";
+        src: url("/home/bishal/bishal/major_project/classificationSystem/babyCryClassificationSystem/predictor/templates/PreetiNormal.otf");
+      }
+    </style>
+    <title>Classifier</title>
+  </head>
+  <body>
+    <h1 style="font-family: 'Preeti'">नमस्ते</h1>
 
-<form method="post" enctype="multipart/form-data" action="predictor/">
-  {% csrf_token %}
-  <label for="audio_file">Upload audio file:</label>
-  <input type="file" name="audio_file" id="audio_file" />
-  <button type="submit">Submit</button>
-</form>
+    <h1>Prediction</h1>
+
+    <form method="post" enctype="multipart/form-data" action="predictor/">
+      {% csrf_token %}
+      <label for="audio_file">Upload audio file:</label>
+      <input type="file" name="audio_file" id="audio_file" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

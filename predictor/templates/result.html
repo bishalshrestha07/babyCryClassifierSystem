@@ -1,2 +1,15 @@
-this is result
-<h1>{{genre}}</h1>
+<!-- <h1>{{genre}}</h1> -->
+
+<h1 style="font-family: 'Preeti'">परिणाम</h1>
+{% if genre == "sleepy" %}
+<h1 style="font-family: 'Preeti'">बच्चालाई निद्रा लाएको छ</h1>
+{% elif genre == "hungry" %}
+<h1 style="font-family: 'Preeti'">बच्चालाई भोक लाएको छ</h1>
+{% elif genre == "uncomfortable" %}
+<h1 style="font-family: 'Preeti'">बच्चालाई असहज महसुज भएको छ</h1>
+{% else %}
+<h1 style="font-family: 'Preeti'">
+  माफ गर्नुहोला हामीले बच्चा रोएको कारण पत्ता लगाउँन सकेनौ
+</h1>
+
+{% endif %}
